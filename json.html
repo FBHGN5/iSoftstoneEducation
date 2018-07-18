@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>json字符串前端处理</title>
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		
+    var json1=[{"url1":{"name":"tom","sex":"男","age":"24"}},{"url2":{"name":"tom2","sex":"男","age":"24"}}];
+	var json=[{"name":"tom","sex":"男","age":"24"},{"name":"tom2","sex":"男","age":"24"}];
+	 var url={
+	 	"url1":"/d",
+	 	"url2":"/c"
+	 }
+	//类似java的foreach
+	alert(url.url2);
+	for(var p in json)
+	{
+
+		console.log(json[p].name);
+	}
+});
+	
+
+  
+</script>
+</head>
+<body>
+	
+</body>
+</html>

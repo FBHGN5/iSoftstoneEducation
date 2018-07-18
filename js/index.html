@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 引入 Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<title>js</title>
+	<style>
+    input{
+    	margin-top: 5px;
+    }
+	</style>
+	<script>
+	function checkInfo(a){
+		var A=document.getElementById("a");
+			var B=document.getElementById("b");
+			var result=document.getElementById("result");
+			sta=A.value;
+			stb=B.value;
+			console.log(sta);
+			result.innerHTML=eval(sta+a+stb);
+	}
+		// function checkInfo(a)
+		// { 
+		// 	var A=document.getElementById("a");
+		// 	var B=document.getElementById("b");
+		// 	var result=document.getElementById("result");
+		//     result.innerHTML=parseInt(A.value)+parseInt(B.value);
+		//     if(A.value.indexOf('.') != -1||B.value.indexOf('.') != -1)
+		//     {
+		//     	  result.innerHTML=parseFloat(A.value)+parseFloat(B.value);
+		//     }
+		//     else{
+		//     	  result.innerHTML=parseInt(A.value)+parseInt(B.value);
+		//     }
+		//     //result.innerHTML=eval();解析字符串
+
+		// }
+		// function checkInfo1(a)
+		// { 
+		// 	var A=document.getElementById("a");
+		// 	var B=document.getElementById("b");
+		// 	var result=document.getElementById("result");
+		//     result.innerHTML=A.value-B.value;
+
+		// }
+		// function checkInfo2(a)
+		// { 
+		// 	var A=document.getElementById("a");
+		// 	var B=document.getElementById("b");
+		// 	var result=document.getElementById("result");
+		//     result.innerHTML=A.value*B.value;
+
+		// }
+		// function checkInfo3(a)
+		// { 
+		// 	var A=document.getElementById("a");
+		// 	var B=document.getElementById("b");
+		// 	var result=document.getElementById("result");
+		//     result.innerHTML=A.value/B.value;
+
+		// }
+	</script>
+</head>
+<body>
+	<form action="">
+		数字A<input type="text" id="a"><br>
+		数字B<input type="text" id="b"><br>
+		<div id="result"></div>
+		<input type="button" class="btn-info" value="+" onclick="checkInfo('+')">
+		<input type="button" class="btn-info" value="-" onclick="checkInfo('-')">
+		<input type="button" class="btn-info" value="*" onclick="checkInfo('*')">
+		<input type="button" class="btn-info" value="/" onclick="checkInfo('/')">
+	</form>	
+</body>
+</html>

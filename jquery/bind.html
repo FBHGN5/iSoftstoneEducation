@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bind</title>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script>
+  $(function(){
+       $("#btn1").bind("click",function(){
+            alert("--------------");
+       });
+       $("#btn2").bind("click",function(){
+           $("#btn1").unbind();
+       });
+       setInterval();
+       $("#btn3").bind("click",function(){
+           $("#btn1").bind("click");
+       });
+  })
+	</script>
+</head>
+<body>
+	<input type="button" value="弹出" id="btn1">
+	<input type="button" value="失效" id="btn2">
+	<input type="button" value="生效" id="btn2">
+</body>
+</html>

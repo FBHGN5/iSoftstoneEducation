@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script>
+ $(function(){
+ $("#btn").click(function (){
+ 	//console.log($("#img").css("display"));
+ 	
+ 	if($("#btn").val()=="隐藏"){
+            $("#btn").val("显示");
+            $("#img").hide();
+            return;
+        }
+   if($("#btn").val()=="显示"){
+            	 $("#btn").val("隐藏");
+            	  $("#img").show();
+            }
+ });
+    });
+	</script>
+</head>
+<body>
+<input type="button" value="隐藏" id="btn">
+	<img id="img" src="1.jpg" style="width:200px;height:200px;display:block;">
+	<input type="text">
+	<div>
+	<p>
+
+	</p>
+
+<a href=""></a>
+</div>
+</body>
+</html>

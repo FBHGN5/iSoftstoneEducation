@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>select</title>
+</head>
+<body id="body">
+	<select id="slt" onchange="change()">
+    <option value="red">红色</option>
+    <option value="yellow">黄色</option>
+    <option value="green">绿色</option>
+  </select>
+  <input type="text" id="in" onchange="change2()">
+</body>
+<script>
+  document.bgColor="red";
+  function change()
+  { var slt=document.getElementById("slt");
+
+  for(var i=0;i<slt.length;i++){
+    if(slt[i].selected){
+      document.bgColor=slt[i].value;
+    }
+  }
+}
+function change2(){
+  var bg=document.getElementById("in");
+  document.bgColor=bg.value;
+}
+</script>
+</html>

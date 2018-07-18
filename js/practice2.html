@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>图片</title>
+	<link rel="shortcut icon" href="https://cdn.fg111.top/assets/icons/bitcoin.16.png" type="image/x-icon"/>
+	<script>
+	// prompt第一个参数是提示，第二个是默认值
+    // var year=prompt("请输入一个年份！","");
+    function bt1(a)
+    {if(confirm("确认更换？")==true){
+
+     document.body.style.background = "url(img/"+a+".jpg)";
+    }
+    function rec(){
+    	if(confirm("qqqqq")==true){
+    		return true;
+    	}
+    	else{
+    		return false;
+    	}
+    }
+    }
+   </script>
+</head>
+<body>
+	<input type="button" value="背景图片1" onmouseover="bt1(1)">
+	<input type="button" value="背景图片2" onmouseover="bt1(2)">
+	<input type="button" value="背景图片3" onmouseover="bt1(3)">
+	<a href="https://123.sogou.com/" onclick="rec()">点击</a>
+</body>
+</html>

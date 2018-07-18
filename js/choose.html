@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>颜色选择</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	div{
+		width: 51px;
+	}
+    ul li{list-style: none;}
+    div ul li{
+    	width: 50px;
+    }
+    div ul li ul li{
+         display: none;
+    }
+     div ul li:hover ul li{
+     	display:block;
+     }
+	</style>
+	<script>
+      
+	</script>
+</head>
+<body>
+	<div>
+    <ul>
+   <li>颜色
+   <ul>
+<li onclick="red()">红色</li>
+<li onclick="yellow()">黄色</li>
+<li onclick="green()">绿色</li>
+   </ul>
+   </li>
+    </ul>
+	</div>
+</body>
+</html>

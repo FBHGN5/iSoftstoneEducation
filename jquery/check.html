@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+	var number = '';
+$('input:checkbox[name=goods]:checked').each(function(k){
+    if(k == 0){
+        number = $(this).val();
+    }else{
+        number += ','+$(this).val();
+    }
+})
+alert(number)
+</script>
+</head>
+<body>
+<input type="checkbox" value="1" name="goods">
+<input type="checkbox" value="2" name="goods">	
+</body>
+</html>

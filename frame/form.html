@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="refresh" content="5;url=http://www.baidu.com"> -->
+	<title>Document</title>
+	<script>
+   function checkInfo()
+   {
+   	var username=document.getElementById("username");
+   	
+      var hobby=document.getElementsByName("hobby");
+      var j=0;
+      if(username.value==""){
+         alert("请输入用户名！！！");
+      }
+      else{
+         for(var i=0;i<hobby.length;i++){
+            if (hobby[i].checked==true) {
+               j++;
+               console.log("11");
+            }
+
+         }
+          if(j<1){
+               alert("至少选择一个爱好！@！")
+            }
+      }
+   }
+	</script>
+</head>
+<body>
+<form action="" >
+<input type="radio" name="sex" value="nan">男<br>
+<input type="radio" name="sex">女
+<br>
+<input type="checkbox" name="hobby">篮球<br>
+<input type="checkbox" name="hobby">篮球<br>
+<input type="checkbox" name="hobby">篮球<br>
+<input type="text" id="username">
+<input type="button" value="提交" onclick="checkInfo()">
+</form>	
+</body>
+</html>

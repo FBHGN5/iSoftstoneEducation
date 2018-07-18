@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script>
+ $(function(){
+     $("#all").click(function(){
+        
+    if(this.checked==true){
+        	$("#dd").children().prop("checked",true);
+        }
+        else{
+        	$("#dd").children().prop("checked",false);
+        }
+
+ 	});
+     $(".check").click(function(){
+     	var c=$("input[name=us]:checked").length;//选中的长度
+     	var a=$(".check").length;//子checkbox长度
+            if(c==a){
+                 $("#all").prop("checked",true);
+            }
+            else{
+            	 $("#all").prop("checked",false);
+            }
+
+       });
+ });
+	</script>
+</head>
+<body>
+<input type="checkbox" id="all" value="全选">全选<br>
+<p id="dd">
+<input type="checkbox" name="us" class="check"><br>
+<input type="checkbox" name="us" class="check"><br>
+<input type="checkbox" name="us" class="check"><br>
+<input type="checkbox" name="us" class="check"><br>
+<!-- <input type="checkbox" class="check"><br>
+<input type="checkbox" class="check"><br>
+<input type="checkbox" class="check"><br> -->
+</p>
+</body>
+</html>

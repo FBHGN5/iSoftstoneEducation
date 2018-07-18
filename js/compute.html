@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>网页标题</title>
+<meta charset="utf-8" >
+<script>
+	function compute(a){
+		var stra = document.getElementById("stra").value;
+		var strb = document.getElementById("strb").value;
+		
+		//stra = parseInt(stra); //parseFloat()
+		//strb = parseInt(strb);
+		
+		//if(a == 1){
+			var result = document.getElementById("result");
+			result.innerHTML = eval(stra+a+strb);
+		//}
+	}
+</script>
+</head>
+<body>
+	
+	<div>
+		<form action="first.html" method="get">
+			数字A：<input type="text" id="stra" value="" /><br>
+			数字B：<input type="text" id="strb" value="" /><br>
+			结果：<span id="result"></span>
+			<input type="button" name="" value="加法" onclick="compute('+')" />
+			<input type="button" name="" value="减法" onclick="compute('-')" />
+			<input type="button" name="" value="乘法" onclick="compute('*')" />
+			<input type="button" name="" value="除法" onclick="compute('/')" />
+			<br>
+		</form>
+	</div>
+	
+</body>
+</html>

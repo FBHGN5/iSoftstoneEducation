@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+	$(
+		function(){
+			
+			
+		}
+	);
+	
+	function addInput(){
+		//div中p标签的当前数量
+		var p_num = $("#address").children().length;
+		//新地址标号
+		var add_num =  p_num + 1;
+		
+		var addHTML = "<p><span>地址"+add_num+"</span><input type='text' /><input type='button' value='-' onclick='del(this)'/></p>";
+		
+		//向div中追加内容
+		$("#address").append(addHTML);
+		
+	}
+	function del(obj){
+               $(obj).parent().remove();
+	}
+</script>
+</head>
+<input id="btn" type="button" value="添加" onclick="addInput()" />
+<div id="address">
+<p>
+<span>地址1</span>
+<input type="text" />
+<input type="button" value="-" />
+</p>
+</div>
+
+
+</html>
